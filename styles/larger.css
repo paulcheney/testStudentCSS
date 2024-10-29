@@ -1,435 +1,444 @@
-@media (min-width: 710px){
-
-/*START HEADER CODE*/
-nav {
-    padding: 1.5rem 2rem;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    justify-content: flex-end;
-    background-color: transparent;
-}
-
-.nav-links a {
-    color: #fff;
-    padding: 1rem;
-}
-
-.burger {
-    display: none; /* Hide burger menu on larger screens */
-}
-
-/*END HEADER CODE*/
-
-
-/*START HERO CODE*/
-.hero {
-    height: 85vh; /* Taller on larger screens */
-}
-
-.hero-content {
-    top: 40%; /* Position slightly higher */
-}
-
-.hero-content h1 {
-    font-size: 3.5rem; /* Larger font for desktop */
-}
-
-.btn-primary {
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-}
-
-/*END HERO CODE*/
-
-
-/*START EVENTS CODE*/
-
-/* Current Events Section for Desktop */
-.current-events {
-    padding: 4rem 2rem;
-}
-
-.current-events h2{
-    font-size: 2rem;
-}
-
-.events-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 2rem;
-}
-
-.event {
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.event:hover {
-    transform: translateY(-5px); 
-}
-
-.event h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.event p {
-    font-size: 1rem;
-}
-
-.event a {
-    font-size: 1rem;
-}
-
-/*END EVENTS CODE*/
-
-/*START WEATHER CODE*/
-
-/* Weather Card Section for Desktop */
-.weather-card {
-    background-color: #f3f3f3;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 10px;
-    margin: 0;
-}
-
-.weather-card h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.weather-content {
-    background-color: #fff;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.weather-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.weather-info p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Inter', sans-serif;
-    color: #333;
-}
-
-.weather-info p::before {
-    margin-right: 0.5rem;
-}
-
-/*END WEATHER CODE*/
-
-/*START SPOTLIGHT CODE*/
-.company-spotlights {
-    background-color: #FFFFFF; 
-    padding: 20px;
-    text-align: center; 
-}
-
-.company-spotlights h2 {
-    margin-bottom: 20px; 
-    font-size: 2rem;
-}
-
-.spotlight-cards {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;
-}
-
-.spotlight-card {
-    background-color: #f3f3f3; 
-    border: 1px solid #f1f1f1; 
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin: 10px; 
-    flex: 1 1 30%; 
-    max-width: 30%; 
-}
-
-.spotlight-card h3 {
-    margin: 10px 0; 
-    font-size: 1.5rem;
-}
-
-/*END SPOTLIGHT CODE*/
-
-/*START CTA BLOCK SECTION CODE*/
-
-.cta-block {
-    text-align: center; 
-    padding: 40px; 
-    background-color: #f3f3f3; 
-}
-
-.cta-block h2 {
-    font-size: 2rem; 
-    margin-bottom: 10px; 
-}
-
-.cta-block p {
-    font-size: 1rem; 
-    margin-bottom: 20px; 
-}
-
-.social-icons {
-    display: flex; 
-    justify-content: center; 
-    gap: 25px; 
-}
-
-.social-icon img {
-    width: 50px; 
-    height: 50px; 
-}
-
-/*END CTA BLOCK SECTION CODE*/
-
-/*BANNER CODE*/
-
-.banner p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.banner:hover{
-    transform: scale(0.98); 
-    transition: transform 0.3s ease; 
-}
-
-
-/*END BANNER CODE*/
-
-/*START DISCOVER PAGE CODE*/
-
-.hero-discover {
-    height: 55vh; /* Taller on larger screens */
-}
-
-
-.sidebar h2{
-    font-size: 2rem; 
-    margin-bottom: 10px;
-}
-
-.sidebar h3{
-    font-size: 1.5rem;
-    margin: 2rem 0 0rem 0;
-}
-
-.gallery h2{
-    font-size: 2rem; 
-    margin-bottom: 10px;
-}
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* Sidebar and main area */
-    gap: 20px;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
-    gap: 10px;
-}
-
-.image-grid img:hover {
-    transition: transform 0.3s ease;
-    transform: translateY(-5px);
-}
-
-/*END DISCOVER PAGE CODE*/
-
-
-/*START JOIN PAGE CODE*/
-
-.form-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-}
-
-.membership-benefits {
-    display: block;
-    padding-left: 20px;
-    border-left: 2px solid #002349;
-    margin-top: 1rem;
-}
-
-.membership-benefits h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.membership-benefits ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.membership-benefits ul li{
-    padding-bottom: 1rem;
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
-}
-
-/*END JOIN PAGE CODE*/
-
-/*START DIRECTORY CODE*/
-.member-directory{
-    text-align: center;   
-}
-
-.member-directory h2{
-    font-size: 2rem;
-}
-
-.directory-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    
-}
-
-.directory-grid .member-card img{
-    width: 100px;
-    height: 100px;
-    padding-bottom: 10px;
-}
-
-.directory-grid .member-card{
-    transition: transform 0.3s ease;
-}
-
-.directory-grid .member-card:hover{
-    transform: translateY(-5px); 
-}
-
-.directory-grid h3{
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.directory-list {
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.directory-list .member-card{
-    transition: transform 0.3s ease;
-}
-
-.directory-list .member-card:hover{
-    transform: translateY(-5px); 
-}
-
-.directory-list h3{
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/*END DIRECTORY PAGE CODE*/
-
-
-/*START THANKYOU CODE*/
-
-.thankyou-section {
-    min-height: 75vh;
-    padding: 40px;
-}
-
-.thankyou-section h1 {
-    font-size: 2rem;
-}
-
-.thankyou-section p {
-    font-size: 1rem;
-}
-
-.thankyou-section .btn {
-    font-size: 1rem;
-    padding: 1rem 2rem;
-}
-/*END THANKYOU CODE*/
-
-
-/*START FOOTER CODE*/
-
-/* Footer styles for desktop */
-footer {
-    padding: 1.5rem 3rem;
-}
-
-/* Align top section (logo + links) in a single line */
-.top-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-}
-
-.left-section {
-    display: flex;
-    align-items: center;
-}
-
-.left-section p.disclaimer{
-    margin-left: 20px;
-}
-
-.footer-logo{
-    margin-bottom: 0;
-}
-
-.footer-logo img {
-    width: 80px;
-    margin-right: 2rem; /* Spacing between the logo and text */
-}
-
-.left-section p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* Style for the horizontal line */
-hr {
-    border: 0;
-    border-top: 1px solid #fff;
-    opacity: 0.5;
-    margin: 1.5rem 0;
-}
-
-/* Bottom section in a single line and aligned to the right */
-.bottom-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-}
-
-.bottom-section p {
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-/*END FOOTER CODE*/
+@media (min-width: 710px) {
+
+    /*START HEADER CODE*/
+    nav {
+        padding: 1.5rem 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+
+    .nav-links a {
+        color: #fff;
+        padding: 1rem;
+    }
+
+    .burger {
+        display: none;
+        /* Hide burger menu on larger screens */
+    }
+
+    /*END HEADER CODE*/
+
+
+    /*START HERO CODE*/
+    .hero {
+        height: 85vh;
+        /* Taller on larger screens */
+    }
+
+    .hero-content {
+        top: 40%;
+        /* Position slightly higher */
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        /* Larger font for desktop */
+    }
+
+    .btn-primary {
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+    }
+
+    /*END HERO CODE*/
+
+
+    /*START EVENTS CODE*/
+
+    /* Current Events Section for Desktop */
+    .current-events {
+        padding: 4rem 2rem;
+    }
+
+    .current-events h2 {
+        font-size: 2rem;
+    }
+
+    .events-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .event {
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .event:hover {
+        transform: translateY(-5px);
+    }
+
+    .event h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .event p {
+        font-size: 1rem;
+    }
+
+    .event a {
+        font-size: 1rem;
+    }
+
+    /*END EVENTS CODE*/
+
+    /*START WEATHER CODE*/
+
+    /* Weather Card Section for Desktop */
+    .weather-card {
+        background-color: #f3f3f3;
+        padding: 4rem 2rem;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .weather-card h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .weather-content {
+        background-color: #fff;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .weather-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .weather-info p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        color: #333;
+    }
+
+    .weather-info p::before {
+        margin-right: 0.5rem;
+    }
+
+    /*END WEATHER CODE*/
+
+    /*START SPOTLIGHT CODE*/
+    .company-spotlights {
+        background-color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .company-spotlights h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .spotlight-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .spotlight-card {
+        background-color: #f3f3f3;
+        border: 1px solid #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 10px;
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+
+    .spotlight-card h3 {
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    /*END SPOTLIGHT CODE*/
+
+    /*START CTA BLOCK SECTION CODE*/
+
+    .cta-block {
+        text-align: center;
+        padding: 40px;
+        background-color: #f3f3f3;
+    }
+
+    .cta-block h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .cta-block p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .social-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /*END CTA BLOCK SECTION CODE*/
+
+    /*BANNER CODE*/
+
+    .banner p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .banner:hover {
+        transform: scale(0.98);
+        transition: transform 0.3s ease;
+    }
+
+
+    /*END BANNER CODE*/
+
+    /*START DISCOVER PAGE CODE*/
+
+    .hero-discover {
+        height: 55vh;
+        /* Taller on larger screens */
+    }
+
+
+    .sidebar h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .sidebar h3 {
+        font-size: 1.5rem;
+        margin: 2rem 0 0rem 0;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /* Sidebar and main area */
+        gap: 20px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for desktop */
+        gap: 10px;
+    }
+
+    .image-grid img:hover {
+        transition: transform 0.3s ease;
+        transform: translateY(-5px);
+    }
+
+    /*END DISCOVER PAGE CODE*/
+
+
+    /*START JOIN PAGE CODE*/
+
+    .form-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+
+    .membership-benefits {
+        display: block;
+        padding-left: 20px;
+        border-left: 2px solid #002349;
+        margin-top: 1rem;
+    }
+
+    .membership-benefits h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .membership-benefits ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    .membership-benefits ul li {
+        padding-bottom: 1rem;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /*END JOIN PAGE CODE*/
+
+    /*START DIRECTORY CODE*/
+    .member-directory {
+        text-align: center;
+    }
+
+    .member-directory h2 {
+        font-size: 2rem;
+    }
+
+    .directory-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+    }
+
+    .directory-grid .member-card img {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+    .directory-grid .member-card {
+        transition: transform 0.3s ease;
+    }
+
+    .directory-grid .member-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .directory-grid h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .directory-list {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .directory-list .member-card {
+        transition: transform 0.3s ease;
+    }
+
+    .directory-list .member-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .directory-list h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /*END DIRECTORY PAGE CODE*/
+
+
+    /*START THANKYOU CODE*/
+
+    .thankyou-section {
+        min-height: 75vh;
+        padding: 40px;
+    }
+
+    .thankyou-section h1 {
+        font-size: 2rem;
+    }
+
+    .thankyou-section p {
+        font-size: 1rem;
+    }
+
+    .thankyou-section .btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /*END THANKYOU CODE*/
+
+
+    /*START FOOTER CODE*/
+
+    /* Footer styles for desktop */
+    footer {
+        padding: 1.5rem 3rem;
+    }
+
+    /* Align top section (logo + links) in a single line */
+    .top-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-section p.disclaimer {
+        margin-left: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+        margin-right: 2rem;
+        /* Spacing between the logo and text */
+    }
+
+    .left-section p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    /* Style for the horizontal line */
+    hr {
+        border: 0;
+        border-top: 1px solid #fff;
+        opacity: 0.5;
+        margin: 1.5rem 0;
+    }
+
+    /* Bottom section in a single line and aligned to the right */
+    .bottom-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .bottom-section p {
+        margin-left: 2rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+
 
 }
