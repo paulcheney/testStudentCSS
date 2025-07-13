@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test2</title>
+    <title>Nirintsoa Liva Jhonson Rabariharinjaka - WDD231 Course Home Page</title>
+    <meta name="description" content="My personal home page for the WDD231 course, showcasing web development skills and projects.">
+    <meta name="author" content="Nirintsoa Liva Jhonson Rabariharinjaka">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header-content">
+            <img src="images/mylogo.svg" alt="Site Logo" class="logo">
+            <span>Nirintsoa Liva Jhonson Rabariharinjaka</span>
+            <button id="menu-button" class="menu-button">&#9776;</button> </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li> <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="final/index.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Welcome to my WDD231 course home page! My name is Nirintsoa Liva Jhonson Rabariharinjaka, and I am a student passionate about web development. I am currently learning HTML, CSS, and JavaScript to build engaging and responsive web experiences.</p>
+            <h3>Skills & Interests:</h3>
+            <ul>
+                <li>HTML5 & Semantic Structure</li>
+                <li>CSS3 & Responsive Design</li>
+                <li>JavaScript Fundamentals</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="assignments">
+            <h2>Assignments & Projects</h2>
+            <p>Here you'll find links to the assignments and projects I'll be working on throughout this course.</p>
+            <ul>
+                <li><a href="placeholder-week-1-assignment.html">Week 1 Assignment: Placeholder</a></li>
+                <li><a href="placeholder-week-2-assignment.html">Week 2 Assignment: Placeholder</a></li>
+                <li><a href="chamber/index.html">Chamber of Commerce Site (Week X)</a></li>
+                <li><a href="final/index.html">Final Project Site (Week Y)</a></li>
+                </ul>
+        </section>
+
+        <section id="course-certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-filters">
+                <button id="filter-all" class="filter-button active-filter">All Courses</button>
+                <button id="filter-wdd" class="filter-button">WDD Courses</button>
+                <button id="filter-cse" class="filter-button">CSE Courses</button>
+            </div>
+            <div id="courses-container" class="courses-grid">
+                </div>
+            <p class="credits-summary">Total Credits Displayed: <span id="total-credits">0</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://github.com/LivaJhonson/wdd231" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/liva-jhonson-140088338/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://twitter.com/twitter" target="_blank"><img src="images/twitter.svg" alt="X (formerly Twitter)"></a>
+            <a href="https://facebook.com/facebook" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Nirintsoa Liva Jhonson Rabariharinjaka &#9702; Toamasina/Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
