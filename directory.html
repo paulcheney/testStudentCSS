@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Directory | Montevideo Chamber</title>
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
+<script defer src="scripts/directory.js"></script>
+<script defer src="scripts/date.js"></script>
+</head>
+<body>
+<header class="header-inner container">
+  <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo" width="44" height="44"><span>Montevideo Chamber</span></a>
+  <nav><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="directory.html" class="active">Directory</a></li><li><a href="discover.html">Discover</a></li><li><a href="join.html">Join</a></li></ul></nav>
+</header>
+<main class="container">
+  <h1>Directory</h1>
+  <div class="menu" role="toolbar"><button id="grid" aria-pressed="true">Grid</button><button id="list" aria-pressed="false">List</button></div>
+  <article id="members" class="grid"></article>
+</main>
+<footer class="site-footer container"><p>&copy; <span id="currentyear"></span> Montevideo Chamber</p></footer>
+</body>
+</html>

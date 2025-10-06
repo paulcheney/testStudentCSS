@@ -1,85 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirintsoa Liva Jhonson Rabariharinjaka - WDD231 Course Home Page</title>
-    <meta name="description" content="My personal home page for the WDD231 course, showcasing web development skills and projects.">
-    <meta name="author" content="Nirintsoa Liva Jhonson Rabariharinjaka">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Montevideo Chamber — Promoting local businesses &amp; events</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Basic SEO -->
+  <meta name="description" content="Montevideo Chamber — promoting local businesses, events and resources across Montevideo. Find member businesses, upcoming events and local weather updates." />
+  <meta name="author" content="Samuel Cortez" />
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Montevideo Chamber — Home" />
+  <meta property="og:description" content="Discover Montevideo businesses, events and local weather. Member spotlights and resources for our community." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Montevideo Chamber — Home" />
+  <meta name="twitter:description" content="Discover Montevideo businesses, events and local weather." />
+  <meta name="twitter:image" content="images/og-image.jpg" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0a84ff">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/weather.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Scripts -->
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/events.js"></script>
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlights.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/mylogo.svg" alt="Site Logo" class="logo">
-            <span>Nirintsoa Liva Jhonson Rabariharinjaka</span>
-            <button id="menu-button" class="menu-button">&#9776;</button> </div>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li> <li><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="final/index.html">Final</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Homepage">
+        <img src="images/logo.svg" alt="Montevideo Chamber logo" width="44" height="44">
+        <span class="site-title">Montevideo Chamber</span>
+      </a>
 
-    <main>
-        <h1>Home</h1>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+       </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>Welcome to my WDD231 course home page! My name is Nirintsoa Liva Jhonson Rabariharinjaka, and I am a student passionate about web development. I am currently learning HTML, CSS, and JavaScript to build engaging and responsive web experiences.</p>
-            <h3>Skills & Interests:</h3>
-            <ul>
-                <li>HTML5 & Semantic Structure</li>
-                <li>CSS3 & Responsive Design</li>
-                <li>JavaScript Fundamentals</li>
-                <li>Problem Solving</li>
-            </ul>
-        </section>
+  <main class="container main-content">
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/hero.png" alt="Montevideo skyline" class="hero-img" />
+      <div class="hero-caption">
+        <h1>Welcome to the Montevideo Chamber</h1>
+        <p>Promoting local business, events, and opportunities across Montevideo.</p>
+        <a href="join.html" class="cta">Join the Chamber</a>
+      </div>
+    </section>
 
-        <section id="assignments">
-            <h2>Assignments & Projects</h2>
-            <p>Here you'll find links to the assignments and projects I'll be working on throughout this course.</p>
-            <ul>
-                <li><a href="placeholder-week-1-assignment.html">Week 1 Assignment: Placeholder</a></li>
-                <li><a href="placeholder-week-2-assignment.html">Week 2 Assignment: Placeholder</a></li>
-                <li><a href="chamber/index.html">Chamber of Commerce Site (Week X)</a></li>
-                <li><a href="final/index.html">Final Project Site (Week Y)</a></li>
-                </ul>
-        </section>
+    <!-- Events -->
+    <section class="events" aria-labelledby="events-heading">
+      <h2 id="events-heading">Upcoming Events</h2>
+      <div id="events-list" class="events-list" aria-live="polite">
+        <!-- Fallback static content (overwritten by JS if data loads) -->
+        <article class="event-card">
+          <div class="event-left">
+            <h3 class="event-title">Montevideo Food Festival</h3>
+            <p class="event-date"><strong>Date:</strong> 11/10/2025</p>
+            <p class="event-desc">A celebration of local cuisine and culture at Parque Rodó.</p>
+          </div>
+        </article>
+        <article class="event-card">
+          <div class="event-left">
+            <h3 class="event-title">Business Innovation Forum</h3>
+            <p class="event-date"><strong>Date:</strong> 19/10/2025</p>
+            <p class="event-desc">Networking and talks on entrepreneurship and startups.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section id="course-certificate">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="course-filters">
-                <button id="filter-all" class="filter-button active-filter">All Courses</button>
-                <button id="filter-wdd" class="filter-button">WDD Courses</button>
-                <button id="filter-cse" class="filter-button">CSE Courses</button>
-            </div>
-            <div id="courses-container" class="courses-grid">
-                </div>
-            <p class="credits-summary">Total Credits Displayed: <span id="total-credits">0</span></p>
-        </section>
+    <!-- Weather -->
+    <section id="weather" class="weather" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Montevideo Weather</h2>
+      <div id="weather-current" class="weather-current" aria-live="polite"><p>Loading weather...</p></div>
+      <div id="weather-forecast" class="weather-forecast" aria-live="polite"></div>
+      <p class="weather-note">Weather data provided by OpenWeatherMap.</p>
+    </section>
 
-    </main>
+    <!-- Spotlights -->
+    <section class="spotlights" aria-labelledby="spotlights-heading">
+      <h2 id="spotlights-heading">Member Spotlights</h2>
+      <div id="spotlights" class="grid"></div>
+    </section>
+  </main>
 
-    <footer>
-        <div class="social-media">
-            <a href="https://github.com/LivaJhonson/wdd231" target="_blank"><img src="images/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/liva-jhonson-140088338/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://twitter.com/twitter" target="_blank"><img src="images/twitter.svg" alt="X (formerly Twitter)"></a>
-            <a href="https://facebook.com/facebook" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
-        </div>
-        <p>&copy; <span id="currentyear"></span> Nirintsoa Liva Jhonson Rabariharinjaka &#9702; Toamasina/Madagascar</p>
-        <p id="lastModified"></p>
-    </footer>
-
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Montevideo Chamber — Samuel Cortez</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
 </body>
 </html>
