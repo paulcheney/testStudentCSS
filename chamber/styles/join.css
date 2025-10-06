@@ -3,13 +3,6 @@
   font-size: 1.6rem;
 }
 
-.join-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-
 .join-form-wrap form { 
   display: flex; 
   flex-direction: column; 
