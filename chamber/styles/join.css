@@ -1,3 +1,19 @@
+/* join.css — full updated version */
+
+/* Headline */
+.join-page h1 { 
+  margin-bottom: 1rem; 
+  font-size: 1.6rem;
+}
+
+/* Layout grid */
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Form styles */
 .join-form-wrap form { 
   display: flex; 
   flex-direction: column; 
@@ -6,6 +22,7 @@
   padding: 1rem; 
   border: 1px solid #e6e6e6; 
   border-radius: 8px; 
+  /* 👇 desplaza el form más abajo */
   margin-top: 2.5cm; 
 }
 
