@@ -1,7 +1,6 @@
-// chamber/scripts/date.js
 document.addEventListener('DOMContentLoaded', () => {
-  const y = document.getElementById('currentyear');
-  if (y) y.textContent = new Date().getFullYear();
-  const lm = document.getElementById('lastModified');
-  if (lm) lm.textContent = document.lastModified || 'Unavailable';
+  const yearEl = document.getElementById('currentyear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  const lastModifiedEl = document.getElementById('lastModifiedText');
+  if (lastModifiedEl) lastModifiedEl.textContent = document.lastModified || 'Unavailable';
 });

@@ -1,116 +1,116 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montevideo Chamber — Promoting local businesses &amp; events</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Home — Pablo Samuel Cortez, WDD231</title>
+  <meta name="description" content="Course Home Page for WDD231. W01 Assignment: Course Home Page." />
+  <meta name="author" content="Your Name" />
 
-  <!-- Basic SEO -->
-  <meta name="description" content="Montevideo Chamber — promoting local businesses, events and resources across Montevideo. Find member businesses, upcoming events and local weather updates." />
-  <meta name="author" content="Samuel Cortez" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Montevideo Chamber — Home" />
-  <meta property="og:description" content="Discover Montevideo businesses, events and local weather. Member spotlights and resources for our community." />
-  <meta property="og:image" content="images/og-image.jpg" />
-  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/" />
-
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Montevideo Chamber — Home" />
-  <meta name="twitter:description" content="Discover Montevideo businesses, events and local weather." />
-  <meta name="twitter:image" content="images/og-image.jpg" />
-
-  <!-- Theme color -->
-  <meta name="theme-color" content="#0a84ff">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/weather.css">
   <link rel="stylesheet" href="styles/large.css">
 
   <!-- Scripts -->
+  <script defer src="scripts/navigation.js"></script>
   <script defer src="scripts/date.js"></script>
-  <script defer src="scripts/events.js"></script>
-  <script defer src="scripts/weather.js"></script>
-  <script defer src="scripts/spotlights.js"></script>
+  <script defer src="scripts/course.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Homepage">
-        <img src="images/logo.svg" alt="Montevideo Chamber logo" width="44" height="44">
-        <span class="site-title">Montevideo Chamber</span>
+      <a href="index.html" class="logo" aria-label="Homepage">
+        <img src="images/logo.svg" alt="Site Logo" id="site-logo" />
+        <span class="author-name">Samuel Cortez</span>
       </a>
+
+      <button id="btn-toggle-nav" class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
 
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="join.html">Join</a></li>
-       </ul>
+          <li><a href="chamber/directory.html">Chamber Project</a></li>
+          <li><a href="final.html">Final Project</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <!-- Hero -->
-    <section class="hero">
-      <img src="images/hero.png" alt="Montevideo skyline" class="hero-img" />
-      <div class="hero-caption">
-        <h1>Welcome to the Montevideo Chamber</h1>
-        <p>Promoting local business, events, and opportunities across Montevideo.</p>
-        <a href="join.html" class="cta">Join the Chamber</a>
+  <main class="container main-content" id="top">
+    <h1>Home</h1>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h2 class="section-heading">Welcome</h2>
+      <p>This page demonstrates prerequisite knowledge of HTML, CSS, and JavaScript. Below you will see the certificate courses, credits, and interactive course filtering.</p>
+    </section>
+
+    <!-- About / Student photo row -->
+    <section class="about-row" aria-label="About student and photo">
+      <div class="about-me card" aria-labelledby="about-heading">
+        <h3 id="about-heading" class="card-title">About Me</h3>
+        <p class="about-text">
+          Hi — I am <strong>Samuel Cortez</strong>, a 23-year-old student of Web and Computer Programming. I’m genuinely passionate about computing and technology, and I combine that enthusiasm with practical experience working at a technology company where I help deliver real projects, collaborate with cross-functional teams, and apply industry best practices for readable, maintainable code. My studies have given me a solid foundation in responsive design, front-end development, and accessible interfaces, and on the job I continually sharpen those skills by building user-focused features, debugging complex issues, and learning new tools and frameworks. I enjoy problem solving, improving user experiences, and producing interfaces that balance aesthetics with usability and performance. Outside of tech, I’m a devoted football fan — I love both playing and watching the game because it keeps me active and reinforces teamwork, discipline, and resilience. I also treasure sharing mate and long conversations with family and friends; those relaxed moments recharge me and remind me why I value collaboration and human-centered design. My goal is to grow as a developer, take on increasingly challenging projects, and contribute to products that make people’s lives simpler and more enjoyable.
+        </p>
+      </div>
+
+      <aside class="student-photo card" aria-labelledby="photo-heading">
+        <h3 id="photo-heading" class="card-title">Student Photo</h3>
+        <div class="photo-wrapper">
+          <!-- Put your optimized student photo in images/student.jpg -->
+          <img src="images/student.jpg" alt="Student photo of Your Name" id="student-photo">
+        </div>
+      </aside>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses-section" aria-labelledby="courses-heading">
+      <h2 id="courses-heading" class="section-heading">Web Certificate Courses</h2>
+
+      <div class="courses-controls">
+        <div class="filter-buttons" role="toolbar" aria-label="Filter courses">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="CSE">CSE</button>
+          <button class="filter-btn" data-filter="WDD">WDD</button>
+        </div>
+      </div>
+
+      <div id="courses-list" class="courses-list" aria-live="polite"></div>
+
+      <div class="credits-line">
+        <p class="credits-text">The total credits for courses listed above is <strong id="creditTotal">0</strong>.</p>
       </div>
     </section>
 
-    <!-- Events -->
-    <section class="events" aria-labelledby="events-heading">
-      <h2 id="events-heading">Upcoming Events</h2>
-      <div id="events-list" class="events-list" aria-live="polite">
-        <!-- Fallback static content (overwritten by JS if data loads) -->
-        <article class="event-card">
-          <div class="event-left">
-            <h3 class="event-title">Montevideo Food Festival</h3>
-            <p class="event-date"><strong>Date:</strong> 11/10/2025</p>
-            <p class="event-desc">A celebration of local cuisine and culture at Parque Rodó.</p>
-          </div>
-        </article>
-        <article class="event-card">
-          <div class="event-left">
-            <h3 class="event-title">Business Innovation Forum</h3>
-            <p class="event-date"><strong>Date:</strong> 19/10/2025</p>
-            <p class="event-desc">Networking and talks on entrepreneurship and startups.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Weather -->
-    <section id="weather" class="weather" aria-labelledby="weather-heading">
-      <h2 id="weather-heading">Montevideo Weather</h2>
-      <div id="weather-current" class="weather-current" aria-live="polite"><p>Loading weather...</p></div>
-      <div id="weather-forecast" class="weather-forecast" aria-live="polite"></div>
-      <p class="weather-note">Weather data provided by OpenWeatherMap.</p>
-    </section>
-
-    <!-- Spotlights -->
-    <section class="spotlights" aria-labelledby="spotlights-heading">
-      <h2 id="spotlights-heading">Member Spotlights</h2>
-      <div id="spotlights" class="grid"></div>
+    <!-- Callout / next steps -->
+    <section class="callout">
+      <h2 class="section-heading">Next Steps</h2>
+      <p>Connect with your group on Microsoft Teams and prepare for your first official meeting next week.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="currentyear"></span> Montevideo Chamber — Samuel Cortez</p>
-      <p>Last Modified: <span id="lastModified"></span></p>
+      <p class="socials">
+        <a href="https://github.com/SamuelCortez24" target="_blank" rel="noopener">GitHub</a> |
+        <a href="https://www.linkedin.com/in/pablo-samuel-cortez-241796280/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+
+      <p>
+        &copy; <span id="currentyear"></span> Samuel Cortez — Montevideo, Uruguay
+      </p>
+
+      <p id="lastModified">Last modification: <span id="lastModifiedText"></span></p>
     </div>
   </footer>
 </body>
