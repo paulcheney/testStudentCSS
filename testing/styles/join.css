@@ -159,3 +159,13 @@
   background: var(--accent); 
   transform: translateY(-2px); 
 }
+
+/* Responsive */
+@media (min-width: 900px) {
+  .join-grid { 
+    grid-template-columns: 1fr 360px; 
+    align-items: start; 
+  }
+  .cards { margin-top: 0; }
+  .join-form-wrap form { margin-top: 1.5cm; }
+}
